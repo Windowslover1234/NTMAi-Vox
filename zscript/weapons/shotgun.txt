@@ -39,4 +39,11 @@ class NTM_Shotgun : Shotgun replaces Shotgun {
 			NSHO G 2 Bright A_Light1;
 			Goto LightDone;
 	}
+			override void Tick() //Anyone know how to do this better than copy-pasting this in every sprite you want to spin?
+	{
+		if (sv_ntm_voxelSpin > 0) {
+			A_SetAngle(angle + 3.33, SPF_Interpolate);
+		}
+		Super.Tick();
+	}
 }

@@ -13,6 +13,7 @@ server bool sv_ntm_grenadiers = true;
 server bool sv_ntm_enemyFly = true;
 server int sv_ntm_playerRandom = 0;
 server int sv_ntm_enemyRandom = 0;
+server int sv_ntm_voxelSpin = 2;
 
 // Replacements
 server bool sv_ntm_r_props = true;
